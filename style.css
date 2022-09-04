@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background: #222222;
+}
+
+.center {
+    padding-left: calc(50% - 350px);
+    padding-right: calc(50% - 350px);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+.nav__left {
+    gap: 41px;
+}
+
+.nav__right {
+    gap: 25px;
+}
+
+.nav__cart {
+    padding-left: 17px;
+}
+
+/* business card */
+.business_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+    background: #F1E4E6;
+}
+
+.business_card__brand_slogan {
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F;
+}
+
+.business_card__brand_slogan h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+}
+
+.business_card__brand_slogan h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.business_card__h2_red {
+    color: #F16D7F;
+}
+
+/* PROMO */
+.promo {
+    display: grid;
+    grid-template: 168px 116px / repeat(3, 232px);
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.promo_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.promo_item_big {
+    grid-column: span 3;
+}
+
+.promo__women {
+    background-image: url(img/content/for_women_bg.jpg);
+}
+
+.promo__men {
+    background-image: url(img/content/for_men_bg.jpg);
+}
+
+.promo__kids {
+    background-image: url(img/content/for_kids_bg.jpg);
+}
+
+.promo__accesories {
+    background-image: url(img/content/accesories_bg.jpg);
+}
+
+.promo__link {
+    text-decoration: none;
+    display: block;
+}
+
+.promo h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.promo h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
