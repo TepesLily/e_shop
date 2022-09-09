@@ -32,10 +32,12 @@ header div {
 }
 
 .nav__left {
+    padding-left: 32px;
     gap: 41px;
 }
 
 .nav__right {
+    padding-right: 32px;
     gap: 25px;
 }
 
@@ -46,17 +48,13 @@ header div {
 /* business card */
 .business_card {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 0px;
     background: #F1E4E6;
-
-    padding-right: calc(50% - 469px);
-
 }
 
 .business_card__img {
-    width: 800px;
     height: 764px;
 }
 
@@ -86,6 +84,7 @@ header div {
     display: grid;
     grid-template: 260px 180px / repeat(3, 360px);
     gap: 30px;
+    justify-content: center;
     padding-top: 65px;
     padding-bottom: 96px;
 }
@@ -157,8 +156,9 @@ header div {
 
 .fetured__cards {
     display: grid;
-    grid-template: repeat(2, 587px) / repeat(3, 360px);
+    grid-template: repeat(2, 581px) / repeat(3, 360px);
     gap: 30px;
+    justify-content: center;
 }
 
 .cards__item {
@@ -199,8 +199,11 @@ header div {
     border: 1px solid #FF6A6A;
     background-color: #fff;
     margin-top: 48px;
-    margin-left: 464px;
+}
 
+.fetured__btn {
+    display: flex;
+    justify-content: center;
 }
 
 .fetured {
@@ -223,6 +226,7 @@ header div {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 360px;
 }
 
 .advantages__title {
@@ -244,13 +248,15 @@ header div {
 /* SUBSCRIBE */
 .subscribe {
     background-image: url(img/content/bg_subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 126px;
     padding-top: 97px;
-    text-align: center;
     line-height: 167.2%;
+    text-align: center;
     color: #222224;
 }
 
@@ -258,7 +264,6 @@ header div {
     width: 359px;
     font-size: 20px;
     line-height: 24px;
-    color: #222224;
 }
 
 .subscribe__quote img {
@@ -276,8 +281,6 @@ header div {
 }
 
 .subscribe__form__input {
-    margin-top: 32px;
-    border-radius: 21px;
     width: 256px;
     height: 49px;
     background: #E1E1E1;
@@ -285,10 +288,14 @@ header div {
     padding-left: 22px;
     color: #222224;
     opacity: 0.67;
+    border-bottom-left-radius: 21px;
+    border-top-left-radius: 21px;
 }
 
 .subscribe__form__btn {
-    border-radius: 21px;
+
+    border-bottom-right-radius: 21px;
+    border-top-right-radius: 21px;
     width: 100px;
     height: 49px;
     background: #F16D7F;
@@ -297,6 +304,15 @@ header div {
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.subscribe__btn_input {
+    margin-top: 32px;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* FOOTER */
@@ -316,4 +332,80 @@ footer {
 .media {
     display: flex;
     gap: 8px;
+    padding-right: 32px;
+}
+
+.copyright {
+    padding-left: 32px;
+}
+
+
+/* media */
+
+@media (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+    }
+
+    /* business card */
+    .business_card__img {
+        height: 368px;
+    }
+
+    .business_card__brand_slogan h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .business_card__brand_slogan h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    /* promo */
+    .promo {
+        grid-template: 168px 116px / repeat(3, 232px);
+        gap: 20px;
+        padding-bottom: 110px;
+    }
+
+    /* fetured */
+    .featured__descript {
+        margin-bottom: 72px;
+    }
+
+    .fetured__cards {
+        grid-template: repeat(3, 582px) / repeat(2, 360px);
+        gap: 14px;
+    }
+
+    .fetured {
+        padding-bottom: 64px;
+    }
+
+    .fetured__btn_browse_all {
+        margin-top: 32px;
+    }
+
+    /* advantages */
+
+    .advantages {
+        display: grid;
+        grid-template: repeat(3, 134px) / 360px;
+        justify-content: center;
+        gap: 48px;
+        padding: 48px 0px 64px 0px;
+    }
+
+    /* subscribe */
+    .subscribe {
+        flex-direction: column;
+        padding-top: 64px;
+        gap: 48px;
+        line-height: 162%;
+        padding-bottom: 140px;
+    }
+
+
 }
