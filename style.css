@@ -342,7 +342,7 @@ footer {
 
 /* media */
 
-@media (max-width:1024px) {
+@media (max-width:1023px) {
     .center {
         padding-left: calc(50% - 384px);
         padding-right: calc(50% - 384px);
@@ -391,11 +391,98 @@ footer {
     /* advantages */
 
     .advantages {
-        display: grid;
         grid-template: repeat(3, 134px) / 360px;
-        justify-content: center;
         gap: 48px;
-        padding: 48px 0px 64px 0px;
+        padding: 48px 0px;
+    }
+
+    /* subscribe */
+    .subscribe {
+        flex-direction: column;
+        padding-top: 64px;
+        gap: 48px;
+        line-height: 162%;
+        padding-bottom: 140px;
+    }
+}
+
+@media (max-width:767px) {
+    .center {
+        padding-left: calc(50% - 188px);
+        padding-right: calc(50% - 188px);
+    }
+
+    /* header */
+    .nav__left {
+        padding-left: 16px;
+    }
+
+    .nav__right {
+        padding-right: 16px;
+    }
+
+    .nav__profile {
+        display: none;
+    }
+
+    .nav__cart {
+        display: none;
+    }
+
+    /* business card */
+    .business_card__img {
+        display: none;
+    }
+
+    .business_card {
+        height: 368px;
+    }
+
+    .business_card__brand_slogan h1 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .business_card__brand_slogan h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    /* promo */
+    .promo {
+        grid-template: 248px 248px 248px 111px / 343px;
+        gap: 32px;
+        padding-bottom: 64px;
+    }
+
+    .promo_item_big {
+        grid-column: span 1;
+    }
+
+    /* fetured */
+    .featured__descript {
+        margin-bottom: 64px;
+    }
+
+    .fetured__cards {
+        grid-template: repeat(6, 582px) / 360px;
+        gap: 15px;
+    }
+
+    .fetured {
+        padding-bottom: 96px;
+    }
+
+    .fetured__btn_browse_all {
+        margin-top: 40px;
+    }
+
+    /* advantages */
+
+    .advantages {
+        grid-template: repeat(3, 130px) / 348px;
+        gap: 47px;
+        padding: 48px 0px 81px 0px;
     }
 
     /* subscribe */
@@ -407,5 +494,20 @@ footer {
         padding-bottom: 140px;
     }
 
+    /* footer */
 
+    footer {
+        flex-direction: column-reverse;
+        padding-top: 43px;
+        padding-bottom: 9px;
+        gap: 40px;
+    }
+
+    .media {
+        padding: 0;
+    }
+
+    .copyright {
+        padding: 0;
+    }
 }
