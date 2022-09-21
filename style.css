@@ -9,7 +9,10 @@ body {
 
 a {
     text-decoration: none;
+}
 
+li {
+    list-style: none;
 }
 
 .center {
@@ -18,31 +21,83 @@ a {
 }
 
 /* HEADER */
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     background: #222222;
 }
 
-header div {
-    display: flex;
-    align-items: center;
-}
+.navbar {}
 
 .nav__left {
+    display: flex;
+    align-items: center;
     padding-left: 32px;
     gap: 41px;
 }
 
 .nav__right {
+    display: flex;
+    align-items: center;
     padding-right: 32px;
     gap: 25px;
 }
 
 .nav__cart {
     padding-left: 17px;
+}
+
+.nav__menu_hidden_list {
+    position: relative;
+}
+
+.nav__menu_list {
+    display: none;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 32px;
+    width: 200px;
+    position: absolute;
+    top: 52px;
+}
+
+.menu_list__sublist {
+    padding-left: 20px;
+}
+
+.menu_list__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 24px;
+}
+
+.menu_list__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 12px;
+}
+
+.menu_list__sublist a {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.menu_list__sublist li {
+    margin-bottom: 11px;
+}
+
+.nav__menu_hidden_list:hover .nav__menu_list {
+    display: block;
+}
+
+.nav__menu_hidden_list:active .nav__menu_list {
+    display: block;
 }
 
 /* business card */
